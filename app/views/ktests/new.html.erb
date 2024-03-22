@@ -1,0 +1,15 @@
+<%= form_with model: @ktest, local: true do |f|%>
+  <div class="field">
+    <%= f.label :title, "日にち" %><br />
+    <%= f.text_field :title, id:"ktest_title" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :content, "キャッチコピー" %><br />
+    <%= f.text_area :content, class: :form__text, id:"ktest_content" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "保存する", class: :form__btn  %>
+  </div>
+<% end %>
